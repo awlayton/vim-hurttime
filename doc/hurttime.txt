@@ -1,0 +1,29 @@
+*hurttime.txt*
+
+                              HURTTIME MANUAL
+
+1. About                                                      |hurttime-about|
+2. Configuration                                          |hurttime-configure|
+
+==============================================================================
+1. About                                                      *hurttime-about*
+
+Hurttime is an enhancement of hardtime which utilizes pavvim.
+Both hardtime and pavvim are needed for hurttime to work.
+
+Whenever hardtime does not like a keypress, hurttime will send some "hurt".
+
+==============================================================================
+2. Configuration                                            *pavvim-configure*
+
+g:hurttime#stimulus                                      *g:hurttime#stimulus*
+
+  Sets which stimulus to have Pavlok "hurt" with.
+  Defaults to `shock`, so that fits with the name.
+  Can be one of `vibration`, `shock`, `beep`, or `led`.
+
+g:hurttime#intensity                                    *g:hurttime#intensity*
+  Sets the intensity of the "hurt" stimulus.
+  Defaults to `1`.
+  Can be any integer from `1` to `255`.
+
